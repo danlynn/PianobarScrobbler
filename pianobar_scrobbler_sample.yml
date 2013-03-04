@@ -1,0 +1,6 @@
+# lastfm credentials
+username: someone
+password: ***
+
+# log levels: {none, debug}
+log_level: none
