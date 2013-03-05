@@ -29,8 +29,7 @@ fork do
   begin
     puts "---    fork start: #{"%-21s" % event} #{data['title']}" if config['log_level'] == 'debug'
   
-    lastfm = Lastfm.new('d6f9b9a0a4684dd37c05418f2a725dd2', 'ce5a9b993a041575d3f46efb124c9531')
-    #token = lastfm.auth.get_token
+    lastfm = Lastfm.new(config['api_key'], config['secret'])
     lastfm.session = lastfm.auth.get_mobile_session(:username => config['username'], :password => config['password'])['key']
   
     case event

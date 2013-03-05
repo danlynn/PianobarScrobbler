@@ -1,6 +1,10 @@
-# lastfm credentials
+# last.fm credentials (http://last.fm)
 username: someone
 password: ***
+
+# last.fm api key (http://www.last.fm/api/accounts)
+api_key: not_a_real_key_37c05418f2a725dd2
+secret: not_a_real_secret_f46efb124c9531
 
 # log levels: {none, debug}
 log_level: none
