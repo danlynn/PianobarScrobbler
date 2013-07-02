@@ -38,6 +38,8 @@ fork do
         lastfm.track.update_now_playing(:artist => data['artist'], :track => data['title'])
       when 'songfinish'
         lastfm.track.scrobble(:artist => data['artist'], :track => data['title'])
+      when 'songlove'
+        lastfm.track.love(:artist => data['artist'], :track => data['title'])
   end
   rescue
     if config['log_level'] == 'debug'
