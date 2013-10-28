@@ -2,12 +2,13 @@
 
 # Installation:
 #   1. Run 'bundle install'
-#   2. Set the pianobar_scrobbler.rb file to be executable (755)
-#   3. Rename pianobar_scrobbler_sample.yml to pianobar_scrobbler.yml then
+#   2. Make sure the pianobar_scrobbler.rb file is set to be executable (755)
+#   3. Make sure the pianobar_scrobbler_shell.rb file is set to be executable (755)
+#   4. Rename pianobar_scrobbler_sample.yml to pianobar_scrobbler.yml then
 #      update the lastfm username and password to match your credentials
-#   4. Add the following line to pianobar's ~/.config/pianobar/config file:
-#         event_command = /some/path/PianobarScrobbler/pianobar_scrobbler.rb
-#   5. Restart pianobar
+#   5. Add the following line to pianobar's ~/.config/pianobar/config file:
+#         event_command = /some/path/PianobarScrobbler/pianobar_scrobbler_shell.sh
+#   6. Restart pianobar
 #
 # gem: https://github.com/youpy/ruby-lastfm
 # api: http://www.last.fm/api
