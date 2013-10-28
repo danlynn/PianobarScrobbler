@@ -24,6 +24,7 @@ handle installing the rest of the dependencies.
 5. Ruby is installed: http://www.ruby-lang.org
 6. RubyGems is installed: http://docs.rubygems.org/read/chapter/3
 7. Bundler is installed: http://gembundler.com
+8. A ruby version manager (rvm or rbenv) is installed
 
 ## Installation
 
@@ -32,9 +33,10 @@ should open a command-line in that directory and perform the following
 tasks.
 
 1. Run 'bundle install'
-2. Set the pianobar_scrobbler.rb file to be executable (755)
-3. Rename pianobar_scrobbler_sample.yml to pianobar_scrobbler.yml then
-   update the last.fm credentials and last.fm api keys to match your credentials
-4. Add the following line to pianobar's ~/.config/pianobar/config file:
-      event_command = /some/path/PianobarScrobbler/pianobar_scrobbler.rb
-5. Restart pianobar
+2. Make sure the pianobar_scrobbler.rb file is set to be executable (755)
+3. Make sure the pianobar_scrobbler_shell.rb file is set to be executable (755)
+4. Rename pianobar_scrobbler_sample.yml to pianobar_scrobbler.yml then
+   update the lastfm username and password to match your credentials
+5. Add the following line to pianobar's ~/.config/pianobar/config file:
+   event_command = /some/path/PianobarScrobbler/pianobar_scrobbler_shell.sh
+6. Restart pianobar
