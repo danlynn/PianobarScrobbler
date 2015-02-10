@@ -35,6 +35,7 @@ tasks.
 1. Run 'bundle install'
 2. Make sure the pianobar_scrobbler.rb file is set to be executable (755)
 3. Make sure the pianobar_scrobbler_shell.rb file is set to be executable (755)
+3a. Update pianobar_scrobbler_shell.rb to cd into your directory, i.e. ```cd some/path/PianobarScrobbler/```
 4. Rename pianobar_scrobbler_sample.yml to pianobar_scrobbler.yml then
    update the lastfm username and password to match your credentials
 5. Add the following line to pianobar's ~/.config/pianobar/config file:
